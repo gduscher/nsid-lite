@@ -1,44 +1,20 @@
 {
-  // The site title shown in the browser tab
-  "liteDir": "./", // The directory containing your content (notebooks, files)
+  "liteDir": "./",
   "title": "NSID Lite Demo",
-
-  // The default JupyterLab theme
   "theme": "JupyterLab Dark",
-
-  // Pyodide kernel settings
   "pyodide": {
-    // List additional Pyodide wheels to bundle at build time
-    // Use the full URL or a relative path to the wheel file if local
     "pipliteUrls": [
-      // Local or remote wheel URLs, example:
-      // "./wheels/pyb2d_jupyterlite_backend-0.4.2-py2.py3-none-any.whl"
     ],
-    // Preinstall these packages for all users
     "piplitePackages": [
       "numpy",
       "matplotlib",
       "ipympl",
-	  SciFiReaders-lite"
-      // Add other packages that are available as pure Python wheels
+      "SciFiReaders-lite"
     ]
   },
-
-  // Optionally, include federated extensions (for JupyterLab UI plugins)
   "federated_extensions": [
-    // Example:
-    // "jupyterlab_miami_nights"
   ],
-
-  // Control which kernels are enabled
   "kernels": [
-    "python",
-    // "javascript",
-    // "p5"
-  ],
-
-  // Optionally, set a default notebook to open
-  // "defaultNotebook": "content/welcome.ipynb"
-
-  // Additional settings can be added here
+    "python"
+  ]
 }
